@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>GregsList!</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+
+    <header class="headers">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <h1>Welcome to GregsList</h1>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-sm-4">
+          <h3>Autos</h3>
+        </div>
+        <div class="col-sm-4">
+          <h3>Properties</h3>
+        </div>
+        <div class="col-sm-4">
+          <h3>Jobs</h3>
+        </div>
+      </div>
+    </header>
+    <!-- FORM AND CONTENT -->
+    <section>
+      <div class="row">
+        <div class="col-sm-6">
+          <form onsubmit="app.controllers.autosCtrl.addCar(event)" id="car-form">
+            <input type="text" name='make' placeholder='Make'>
+            <input type="text" name='model' placeholder='model'>
+            <input type="number" name='year' placeholder='year'>
+            <input type="number" name="price" placeholder="NAME YER PRICE">
+            <input type="url" name="img" placeholder="image link">
+            <div class="form-group">
+              <label for="condition">condition</label>
+              <select class="form-control" id="condition" name="condition">
+                <option value="0">"new"</option>
+                <option value="1">like new</option>
+                <option value="2">fair</option>
+                <option value="3">rust-bucket</option>
+                <option value="4">you got a tow truck?</option>
+              </select>
+            </div>
+            <button type="submit">Submitt</button>
+          </form>
+        </div>
+      </div>
+      <div class="row" id="board">
+        <!-- <div class="col-sm-3">
+          <img src="//placehold.it/200x200">
+          <p>MAKE</p>
+          <p>MODEL</p>
+          <p>PRICE</p>
+        </div>
+        <div class="col-sm-3">
+          <img src="//placehold.it/200x200" alt="">
+          <p>MAKE</p>
+          <p>model</p>
+          <p>PRICE</p>
+        </div>
+        <div class="col-sm-3">
+          <img src="//placehold.it/200x200" alt="">
+          <p>MAKE</p>
+          <p>model</p>
+          <p>PRICE</p>
+        </div>
+        <div class="col-sm-3">
+          <img src="//placehold.it/200x200" alt="">
+          <p>MAKE</p>
+          <p>model</p>
+          <p>PRICE</p>
+        </div> -->
+      </div>
+
+
+
+
+
+    </section>
+  </div>
+
+
+
+
+
+
+  <!-- EXTERNAL LIBRARIES -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- SERVICES -->
+  <script src="app/autos/auto-service.js"></script>
+  <!-- CONTROLLER -->
+  <script src="app/autos/auto-controller.js"></script>
+  <!-- INIT/APP -->
+  <script src="app/init.js"></script>
+</body>
+
+</html>
