@@ -21,79 +21,95 @@
         </div>
       </div>
 
-      <div class="row text-center" id-"autos">
+      <div class="row text-center" id- "autos">
         <div class="col-sm-4">
-          <button class="btn btn-primary">Autos</button>
+          <button class="btn btn-primary">
+            <h4>Autos</h4>
+          </button>
         </div>
         <div class="col-sm-4" id="properties">
-          <button class ="btn btn-primary">Properties</button>   
+          <button class="btn btn-primary">
+            <h4>Properties</h4>
+          </button>
         </div>
         <div class="col-sm-4" id="jobs">
-          <button class="btn btn-primary">Jobs</button>
-        </div>  
+          <button class="btn btn-primary">
+            <h4>Jobs</h4>
+          </button>
+        </div>
 
       </div>
 
     </header>
     <!-- FORM AND CONTENT -->
     <section>
-      <div class="row">
-        <div class="col-sm-6">
-          <form onsubmit="app.controllers.autosCtrl.addCar(event)" id="car-form">
-            <input type="text" name='make' placeholder='Make'>
-            <input type="text" name='model' placeholder='model'>
-            <input type="number" name='year' placeholder='year'>
-            <input type="number" name="price" placeholder="NAME YER PRICE">
-            <input type="url" name="img" placeholder="image link">
-            <div class="form-group">
-              <label for="condition">condition</label>
-              <select class="form-control" id="condition" name="condition">
-                <option value="0">"new"</option>
-                <option value="1">like new</option>
-                <option value="2">fair</option>
-                <option value="3">rust-bucket</option>
-                <option value="4">you got a tow truck?</option>
+      <div id="carModels">
+
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <form>
+              <select type="text" id="carQuery" class="material-select">
+                <option value="Honda"><h3>Honda</h3></option>
+                <option value="Mercedes-Benz">Mercedes</option>
               </select>
+            </form>
+            <div class="hidden" id="returnMake">
+
             </div>
-            <button type="submit">Submitt</button>
-          </form>
+            <div class="hidden" id="returnModel">
+
+            </div>
+
+          </div>
         </div>
       </div>
-      <div class="row" id="board">
-        <!-- <div class="col-sm-3">
-          <img src="//placehold.it/200x200">
+      <div class="board">
+        <div class="row">
+          <div class="col-sm-6">
+
+          </div>
+        </div>
+      </div>
+
+      <div class=" row " id="board ">
+        <!-- <div class="col-sm-3 ">
+          <img src="//placehold.it/200x200 ">
           <p>MAKE</p>
           <p>MODEL</p>
           <p>PRICE</p>
         </div>
-        <div class="col-sm-3">
-          <img src="//placehold.it/200x200" alt="">
+        <div class="col-sm-3 ">
+          <img src="//placehold.it/200x200 " alt=" ">
           <p>MAKE</p>
           <p>model</p>
           <p>PRICE</p>
         </div>
-        <div class="col-sm-3">
-          <img src="//placehold.it/200x200" alt="">
+        <div class="col-sm-3 ">
+          <img src="//placehold.it/200x200 " alt=" ">
           <p>MAKE</p>
           <p>model</p>
           <p>PRICE</p>
         </div>
-        <div class="col-sm-3">
-          <img src="//placehold.it/200x200" alt="">
+        <div class="col-sm-3 ">
+          <img src="//placehold.it/200x200 " alt=" ">
           <p>MAKE</p>
           <p>model</p>
           <p>PRICE</p>
         </div> -->
       </div>
 
-
-    
-
-
-
-
-
     </section>
+    <div id="jobsContent ">
+
+      <div class="row ">
+        <div class="col-sm-6 ">
+          <form onsubmit="app.controlelrs.jobtsCtrl.addJob(event) " id="job-form ">
+
+          </form>
+        </div>
+      </div>
+
+    </div>
   </div>
 
 
@@ -102,17 +118,17 @@
 
 
   <!-- EXTERNAL LIBRARIES -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>
   <!-- SERVICES -->
-  <script src="app/properties/properties-service.js"></script>
-  <script src="app/autos/auto-service.js"></script>
-  <script src="app/jobs/jobs-service.js"></script>
+  <script src="app/properties/properties-service.js "></script>
+  <script src="app/autos/auto-service.js "></script>
+  <script src="app/jobs/jobs-service.js "></script>
   <!-- CONTROLLER -->
-  <script src="app/autos/auto-controller.js"></script>
-  <script src="app/properties/properties-controller.js"></script>
-  <script src="app/jobs/jobs-controller.js"></script>
+  <script src="app/autos/auto-controller.js "></script>
+  <script src="app/properties/properties-controller.js "></script>
+  <script src="app/jobs/jobs-controller.js "></script>
   <!-- INIT/APP -->
-  <script src="app/init.js"></script>
+  <script src="app/init.js "></script>
 </body>
 
 </html>

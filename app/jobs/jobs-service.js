@@ -1,13 +1,13 @@
 function JobsService() {
 
     var jobs = []
-    var requirements = []
+    var requirements = ['yes', 'no']
 
     function Job(occupation, location, pay, qualification) {
         this.occupation = occupation
         this.location = localStorage
         this.pay = pay
-        this.qualification = qualification
+        this.qualification = qualifications[qualification]
     }
 
     //Public
@@ -22,7 +22,7 @@ function JobsService() {
 
     this.removeJob = function removeJob(jobOb) {
         var oldCar = ////
-            job.remove(oldJob)
+            job.remove(newJob)
     }
 
     console.log("Job Search Portion")

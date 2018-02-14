@@ -1,9 +1,9 @@
-function JobController(){
+function JobsController(){
 
-var jobController = new JobController
+var jobsController = new JobsController
 
-function draw() {
-    var jobArr = jobService.getJobs()
+function drawJobs() {
+    var jobArr = jobsService.getJobs()
     var template = ''
     for (let i = 0; i < jobArr.length; i++) {
         const job = jobArr[i];
@@ -19,7 +19,6 @@ function draw() {
     document.getElementById('board').innerHTML = template
 }
 
-
 this.addJob = function addJob(event) {
     event.preventDefault();
     var form = event.target
@@ -31,10 +30,10 @@ this.addJob = function addJob(event) {
         qualification: form.qualification.value
         
     }
-    jobService.addJob(jobObj)
+    jobsService.addJob(jobObj)
     document.getElementById('job-form').reset()
     draw()
 }
 
-draw()
+drawJobs()
 }
