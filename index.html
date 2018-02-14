@@ -20,17 +20,20 @@
           <h1>Welcome to GregsList</h1>
         </div>
       </div>
-      <div class="row text-center">
+
+      <div class="row text-center" id-"autos">
         <div class="col-sm-4">
-          <h3>Autos</h3>
+          <button class="btn btn-primary">Autos</button>
         </div>
-        <div class="col-sm-4">
-          <h3>Properties</h3>
+        <div class="col-sm-4" id="properties">
+          <button class ="btn btn-primary">Properties</button>   
         </div>
-        <div class="col-sm-4">
-          <h3>Jobs</h3>
-        </div>
+        <div class="col-sm-4" id="jobs">
+          <button class="btn btn-primary">Jobs</button>
+        </div>  
+
       </div>
+
     </header>
     <!-- FORM AND CONTENT -->
     <section>
@@ -84,6 +87,9 @@
       </div>
 
 
+    
+
+
 
 
 
@@ -98,9 +104,13 @@
   <!-- EXTERNAL LIBRARIES -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!-- SERVICES -->
+  <script src="app/properties/properties-service.js"></script>
   <script src="app/autos/auto-service.js"></script>
+  <script src="app/jobs/jobs-service.js"></script>
   <!-- CONTROLLER -->
   <script src="app/autos/auto-controller.js"></script>
+  <script src="app/properties/properties-controller.js"></script>
+  <script src="app/jobs/jobs-controller.js"></script>
   <!-- INIT/APP -->
   <script src="app/init.js"></script>
 </body>
