@@ -49,7 +49,9 @@
           <div class="col-sm-12 text-center">
             <form>
               <select type="text" id="carQuery" class="material-select">
-                <option value="Honda"><h3>Honda</h3></option>
+                <option value="Honda">
+                  <h3>Honda</h3>
+                </option>
                 <option value="Mercedes-Benz">Mercedes</option>
               </select>
             </form>
@@ -62,6 +64,9 @@
 
           </div>
         </div>
+      </div>
+      <div id="carsContent">
+
       </div>
       <div class="board">
         <div class="row">
@@ -98,6 +103,37 @@
         </div> -->
       </div>
 
+      <div class="car-stuff">
+        <form onsubmit="app.controllers.autosCtrl.makeCar(event)">
+          <div class="form-group">
+            <label for="make">Make:</label>
+            <input type="text" name="make" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="model">Model:</label>
+            <input type="text" name="model" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="year">Year:</label>
+            <input type="text" name="year" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="color">color:</label>
+            <input type="text" name="color" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="price">Price:</label>
+            <input type="text" name="price" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-success">Add Car</button>
+            <button type="reset" class="btn btn-danger red">Clear</button>
+          </div>
+        </form>
+        <div id="cars-here"></div>
+      </div>
+
+
     </section>
     <div id="jobsContent ">
 
@@ -120,13 +156,13 @@
   <!-- EXTERNAL LIBRARIES -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>
   <!-- SERVICES -->
-  <script src="app/properties/properties-service.js "></script>
+  <!-- <script src="app/properties/properties-service.js "></script> -->
   <script src="app/autos/auto-service.js "></script>
-  <script src="app/jobs/jobs-service.js "></script>
+  <!-- <script src="app/jobs/jobs-service.js "></script> -->
   <!-- CONTROLLER -->
   <script src="app/autos/auto-controller.js "></script>
-  <script src="app/properties/properties-controller.js "></script>
-  <script src="app/jobs/jobs-controller.js "></script>
+  <!-- <script src="app/properties/properties-controller.js "></script> -->
+  <!-- <script src="app/jobs/jobs-controller.js "></script> -->
   <!-- INIT/APP -->
   <script src="app/init.js "></script>
 </body>

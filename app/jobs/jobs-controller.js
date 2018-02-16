@@ -1,6 +1,6 @@
 function JobsController(){
 
-var jobsController = new JobsController
+var jobsService = new JobsService
 
 function drawJobs() {
     var jobArr = jobsService.getJobs()
